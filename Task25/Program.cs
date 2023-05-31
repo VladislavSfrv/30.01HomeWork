@@ -7,7 +7,7 @@ Console.Write("B: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
 int result = Degree(numberA, numberB);
-Console.WriteLine(result != 0 ? result : "Введите натуральное число.");
+Console.WriteLine(result != 0 ? $"Степень вашего числа равна - {result}" : "Введите натуральное число.");
 
 int Degree(int a, int b)
 {
@@ -20,7 +20,6 @@ int Degree(int a, int b)
             a = a * numA;
             i++;
         }
-        Console.WriteLine($"Степень равна - {a}");
         return a;
     }
     else return 0;
